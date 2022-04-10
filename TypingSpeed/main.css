@@ -1,0 +1,187 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: auto;
+    height: 100%;
+    min-height: 40rem;
+}
+
+#header {
+    height: 20%;
+    background-color: rgb(1, 41, 55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section {
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.element:nth-child(1) {
+    padding: 0px 9px;
+    height: 100%;
+    width: 250px;
+    font-size: 1.6em;
+    background-color: rgb(14, 189, 189);
+    text-align: center;
+}
+
+.element:nth-child(1)>p {
+    padding: 20px 20px;
+    text-align: left;
+    color: white;
+    font-size: .7em;
+    font-family: sans-serif;
+}
+
+.element:nth-child(2) {
+    padding: 0px 30px 0px 30px;
+    flex: 1;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.element:nth-child(3) {
+    width: 250px;
+    text-align: center;
+    height: 100%;
+    background-color: rgb(14, 189, 189);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.test {
+    height: 200px;
+    width: 80%;
+    margin-top: 30px;
+    background-color: lightgrey;
+    margin-bottom: 15px;
+}
+
+textarea[name="clavier"] {
+    display: block;
+    height: 200px;
+    width: calc(80% - 14px);
+    border: 7px solid gray;
+    border-radius: 8px;
+    font-size: 1.2em;
+}
+
+textarea[name="clavier"]:active,
+textarea[name="clavier"]:focus,
+textarea[name="clavier"]:hover {
+    outline: 0;
+}
+
+#title {
+    color: white;
+    font-style: oblique;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.footer:nth-child(1) {
+    padding-top: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0px 30px 0px 30px;
+}
+
+.footer:nth-child(2) {
+    padding-bottom: 100px;
+}
+
+#refaire {
+    width: 170px;
+    height: 90px;
+    border: 10px solid rgb(233, 115, 5);
+    border-radius: 6px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(233, 115, 5);
+}
+
+#refaire:active,
+#refaire:hover,
+#refaire:focus {
+    outline: 0;
+}
+
+#refaire>span:active {
+    border: 1px lightgray dotted;
+}
+
+#refaire:hover {
+    background-color: rgb(233, 115, 5);
+    color: white;
+}
+
+#text {
+    text-align: justify;
+    padding: 0px 20px;
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+
+.sucess {
+    border-color: aqua !important;
+}
+
+.faild {
+    border-color: rgb(255, 104, 34) !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .element:nth-child(1) {
+        width: 100%;
+        height: 40%;
+        justify-content: center;
+        overflow: auto;
+    }
+    .element:nth-child(2) {
+        width: 100%;
+        height: 100%;
+    }
+    .test {
+        overflow: auto;
+        height: 40%;
+    }
+    .element:nth-child(3) {
+        width: 100%;
+        height: 50%;
+        justify-content: flex-start;
+    }
+    .footer:nth-child(1) {
+        padding-top: 0px;
+    }
+    .footer:nth-child(2) {
+        padding-bottom: 0px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .element:nth-child(1) {
+        height: 50%;
+    }
+    .element:nth-child(2) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
